@@ -128,7 +128,7 @@ public class WebElementActions {
 //		==>Scroll till target element
 		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView()",element);
 		
-		/******WebTables******/
+/******WebTables******/
 //		==>Column Headers
 //		==>Total Rows
 //		==>Total Columns
