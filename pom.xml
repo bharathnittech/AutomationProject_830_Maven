@@ -31,11 +31,17 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.4.0</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.3.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.4.0</version>
 		</dependency>
 
 	</dependencies>
