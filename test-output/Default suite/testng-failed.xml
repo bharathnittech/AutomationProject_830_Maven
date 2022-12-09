@@ -3,16 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="framework.TestNgTestClass">
+      <class name="framework.AssertionsInTestNg">
         <methods>
-          <include name="stopReporting"/>
-          <include name="launchBrowserAndApplication"/>
-          <include name="closeBrowser"/>
-          <include name="testcase1"/>
-          <include name="startReporting"/>
-          <include name="testcase2"/>
+          <include name="softAssertions"/>
         </methods>
-      </class> <!-- framework.TestNgTestClass -->
+      </class> <!-- framework.AssertionsInTestNg -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

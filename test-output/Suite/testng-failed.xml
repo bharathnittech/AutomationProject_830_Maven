@@ -5,18 +5,13 @@
     <listener class-name="framework.TestListner"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="url" value="www.test.com"/>
     <classes>
-      <class name="framework.TestNgTestClass">
+      <class name="framework.TestNgTestMethodsClass">
         <methods>
-          <include name="stopReporting"/>
-          <include name="launchBrowserAndApplication"/>
-          <include name="closeBrowser"/>
-          <include name="startReporting"/>
-          <include name="testcase4"/>
+          <include name="testCase2"/>
+          <include name="setupReport"/>
         </methods>
-      </class> <!-- framework.TestNgTestClass -->
+      </class> <!-- framework.TestNgTestMethodsClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

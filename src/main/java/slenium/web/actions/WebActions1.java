@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -30,18 +31,22 @@ public class WebActions1 {
 		driver.get("https://parabank.parasoft.com/parabank/index.htm");
 		
 //		5. Verify the Application Title (Expected Title= "ParaBank | Welcome | Online Banking")
-			if(driver.getTitle().equals("ParaBank | Welcome | Online Banking")) {	
-				System.out.println("Title is matching");
-			}else {
-				System.out.println("Title is not matching");
-			}
+//			if(driver.getTitle().equals("ParaBank | Welcome | Online Banking")) {	
+//				System.out.println("Title is matching");
+//			}else {
+//				System.out.println("Title is not matching");
+//			}
+			
+			Assert.assertEquals(driver.getTitle(), "ParaBank | Welcome | Online Banking2");
 		
 //		6. Verify Application Logo Displayed in the page
 			WebElement logo = driver.findElement(By.xpath("//img[@title='ParaBank']"));
-			if(logo.isDisplayed()) 
-				System.out.println("Logo is Displayed");
-			else
-				System.out.println("Logo is not Displayed");
+//			if(logo.isDisplayed()) 
+//				System.out.println("Logo is Displayed");
+//			else
+//				System.out.println("Logo is not Displayed");
+			
+			Assert.assertTrue(logo.isDisplayed());
 			
 //		7. Verify Application caption Displayed in the page (ExpectedCaption="Experience the difference")
 			WebElement caption = driver.findElement(By.xpath("//p[@class='caption']"));
