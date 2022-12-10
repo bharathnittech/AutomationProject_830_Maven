@@ -8,49 +8,34 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">60</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">12</td><td class="num">0</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">1,113</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">framework.AssertionsInTestNg</td><td><a href="#m0">softAssertions</a></td><td rowspan="1">1670602766454</td><td rowspan="1">17</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">framework.TestNgTestClass</td><td><a href="#m0">testcase4</a></td><td rowspan="1">1670687999108</td><td rowspan="1">1</td></tr><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">framework.TestNgTestClass</td><td><a href="#m1">testcase4</a></td><td rowspan="2">1670687999094</td><td rowspan="2">5</td></tr><tr class="retriedeven"><td><a href="#m2">testcase4</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="12">framework.TestNgTestClass</td><td><a href="#m3">testcase1</a></td><td rowspan="1">1670687999122</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m4">testcase2</a></td><td rowspan="1">1670687999130</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m5">testcase3</a></td><td rowspan="10">1670688000138</td><td rowspan="10">2</td></tr><tr class="passedeven"><td><a href="#m6">testcase3</a></td></tr><tr class="passedeven"><td><a href="#m7">testcase3</a></td></tr><tr class="passedeven"><td><a href="#m8">testcase3</a></td></tr><tr class="passedeven"><td><a href="#m9">testcase3</a></td></tr><tr class="passedeven"><td><a href="#m10">testcase3</a></td></tr><tr class="passedeven"><td><a href="#m11">testcase3</a></td></tr><tr class="passedeven"><td><a href="#m12">testcase3</a></td></tr><tr class="passedeven"><td><a href="#m13">testcase3</a></td></tr><tr class="passedeven"><td><a href="#m14">testcase3</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">framework.AssertionsInTestNg#softAssertions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	expected [Test2] but found [Test],
-	expected [true] but found [false],
-	expected [false] but found [true],
-	expected [null] but found [Test],
-	expected object to not be null,
-	I WANT TO FAIL
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at framework.AssertionsInTestNg.softAssertions(AssertionsInTestNg.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<h2>Test</h2><h3 id="m0">framework.TestNgTestClass#testcase4</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: Failed
+	at framework.TestNgTestClass.testcase4(TestNgTestClass.java:58)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">framework.TestNgTestClass#testcase4</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: Failed
+	at framework.TestNgTestClass.testcase4(TestNgTestClass.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">framework.TestNgTestClass#testcase4</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: Failed
+	at framework.TestNgTestClass.testcase4(TestNgTestClass.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">framework.TestNgTestClass#testcase1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">framework.TestNgTestClass#testcase2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">framework.TestNgTestClass#testcase3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>cdf</td><td>cdf213</td><td>MANAGER</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">framework.TestNgTestClass#testcase3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>user7</td><td>pass7</td><td>ROLE7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">framework.TestNgTestClass#testcase3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>abc</td><td>abc123</td><td>QA</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">framework.TestNgTestClass#testcase3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>xyz</td><td>xyz123</td><td>DEV</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">framework.TestNgTestClass#testcase3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>user5</td><td>pass5</td><td>ROLE5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">framework.TestNgTestClass#testcase3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>user8</td><td>pass8</td><td>ROLE8</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">framework.TestNgTestClass#testcase3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>user10</td><td>pass10</td><td>ROLE10</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">framework.TestNgTestClass#testcase3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>user9</td><td>pass9</td><td>ROLE9</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">framework.TestNgTestClass#testcase3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>user4</td><td>pass4</td><td>ROLE4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">framework.TestNgTestClass#testcase3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>user6</td><td>pass6</td><td>ROLE6</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Dec 09 21:10:11 IST 2022</td>
+<td>Started on:</td><td>Sat Dec 10 21:29:59 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16279 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1113 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,56 +75,128 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='framework.TestNgTestMethodsClass.testCase2()'><b>testCase2</b><br>Test class: framework.TestNgTestMethodsClass</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@title=&apos;ParaBank&apos;]&quot;}
-  (Session info: chrome=108.0.5359.99)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;BHARATH&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [038d1024bd0bd346d2314c1489fc3790, findElement {using=xpath, value=//img[@title=&apos;ParaBank&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\india\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54097}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54097/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 038d1024bd0bd346d2314c1489fc3790
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at framework.TestNgTestMethodsClass.testCase2(TestNgTestMethodsClass.java:43)
+<td title='framework.TestNgTestClass.testcase4()'><b>testcase4</b><br>Test class: framework.TestNgTestClass</td>
+<td><div><pre>java.lang.Exception: Failed
+	at framework.TestNgTestClass.testcase4(TestNgTestClass.java:58)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace746757564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace746757564'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@title=&apos;ParaBank&apos;]&quot;}
-  (Session info: chrome=108.0.5359.99)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;BHARATH&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [038d1024bd0bd346d2314c1489fc3790, findElement {using=xpath, value=//img[@title=&apos;ParaBank&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\india\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54097}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54097/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 038d1024bd0bd346d2314c1489fc3790
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at framework.TestNgTestMethodsClass.testCase2(TestNgTestMethodsClass.java:43)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace93199773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace93199773'><pre>java.lang.Exception: Failed
+	at framework.TestNgTestClass.testcase4(TestNgTestClass.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase3()'><b>testcase3</b><br>Test class: framework.TestNgTestClass<br>Parameters: cdf, cdf213, MANAGER</td>
+<td></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase3()'><b>testcase3</b><br>Test class: framework.TestNgTestClass<br>Parameters: user7, pass7, ROLE7</td>
+<td></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase3()'><b>testcase3</b><br>Test class: framework.TestNgTestClass<br>Parameters: abc, abc123, QA</td>
+<td></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase3()'><b>testcase3</b><br>Test class: framework.TestNgTestClass<br>Parameters: xyz, xyz123, DEV</td>
+<td></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase3()'><b>testcase3</b><br>Test class: framework.TestNgTestClass<br>Parameters: user5, pass5, ROLE5</td>
+<td></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase3()'><b>testcase3</b><br>Test class: framework.TestNgTestClass<br>Parameters: user8, pass8, ROLE8</td>
+<td></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase3()'><b>testcase3</b><br>Test class: framework.TestNgTestClass<br>Parameters: user10, pass10, ROLE10</td>
+<td></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase3()'><b>testcase3</b><br>Test class: framework.TestNgTestClass<br>Parameters: user9, pass9, ROLE9</td>
+<td></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase3()'><b>testcase3</b><br>Test class: framework.TestNgTestClass<br>Parameters: user4, pass4, ROLE4</td>
+<td></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase2()'><b>testcase2</b><br>Test class: framework.TestNgTestClass</td>
+<td></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase3()'><b>testcase3</b><br>Test class: framework.TestNgTestClass<br>Parameters: user6, pass6, ROLE6</td>
+<td></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase1()'><b>testcase1</b><br>Test class: framework.TestNgTestClass</td>
+<td></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='framework.TestNgTestClass.testcase4()'><b>testcase4</b><br>Test class: framework.TestNgTestClass</td>
+<td><div><pre>java.lang.Exception: Failed
+	at framework.TestNgTestClass.testcase4(TestNgTestClass.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace116669570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace116669570'><pre>java.lang.Exception: Failed
+	at framework.TestNgTestClass.testcase4(TestNgTestClass.java:58)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -154,21 +226,47 @@ Session ID: 038d1024bd0bd346d2314c1489fc3790
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>2</td>
-<td>framework.TestNgTestMethodsClass@6253c26</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
 <tr>
-<td title='framework.TestNgTestMethodsClass.testCase1()'><b>testCase1</b><br>Test class: framework.TestNgTestMethodsClass</td>
-<td></td>
-<td>13</td>
-<td>framework.TestNgTestMethodsClass@6253c26</td></tr>
+<td title='framework.TestNgTestClass.testcase4()'><b>testcase4</b><br>Test class: framework.TestNgTestClass</td>
+<td><div><pre>java.lang.Exception: Failed
+	at framework.TestNgTestClass.testcase4(TestNgTestClass.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace126189538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace126189538'><pre>java.lang.Exception: Failed
+	at framework.TestNgTestClass.testcase4(TestNgTestClass.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>framework.TestNgTestClass@54e1c68b</td></tr>
 </table><p>
 </body>
 </html>

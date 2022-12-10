@@ -36,6 +36,11 @@ public class TestNgTestClass {
 	@Test(priority = 2, groups = { "sanity", "smoke" })
 	public void testcase1() {
 		System.out.println("Test Case 1 Executed...");
+		System.out.println(ReadProp.readData("Config.properties", "browser"));
+		System.out.println(ReadProp.readData("Config.properties", "url"));
+		System.out.println(ReadProp.readData("Config.properties", "environment"));
+		System.out.println(ReadProp.readData("Config.properties", "application"));
+		System.out.println(ReadProp.readData("Config.properties", "developer"));
 	}
 
 	@Test(priority = 3, dependsOnMethods = { "testcase1" }, groups = { "sanity" })
@@ -43,7 +48,7 @@ public class TestNgTestClass {
 		System.out.println("Test Case 2 Executed...");
 	}
 
-	@Test(dataProvider = "testcase3data", priority = 4, groups = { "regression" }, enabled = false)
+	@Test(dataProvider = "testcase3data", priority = 4, groups = { "regression" }, enabled = true)
 	public void testcase3(String username, String password, String role) {
 		System.out.println("Test Case 1 Executed with..." + username + " , " + password + " ," + role);
 	}
@@ -55,15 +60,18 @@ public class TestNgTestClass {
 	}
 
 	@BeforeMethod(alwaysRun = true)
-	@Parameters({ "browser", "url" })
-	public void launchBrowserAndApplication(String browser, String url) {
+//	@Parameters({ "browser", "url" })
+	public void launchBrowserAndApplication() {
+		String browser = ReadProp.readData("Config.properties", "browser");
+		String url = ReadProp.readData("Config.properties", "url");
 		launchBrowser(browser);
 		launchApplication(url);
 	}
 
 	@DataProvider(name = "testcase3data")
 	public String[][] testData() {
-		String[][] data = { { "abc", "abc123", "QA" }, { "xyz", "xyz123", "DEV" }, { "cdf", "cdf123", "DEV" } };
+//		String[][] data = { { "abc", "abc123", "QA" }, { "xyz", "xyz123", "DEV" }, { "cdf", "cdf123", "DEV" } };
+		String[][] data = ReadExcel.readData("Data.xlsx", "Sheet1");
 		return data;
 	}
 

@@ -48,6 +48,7 @@ public class BrowserActions {
 //		10.Launch new tab and Launch the application in new tab (https://in.search.yahoo.com/)
 		driver.switchTo().newWindow(WindowType.TAB);
 		driver.get("https://in.search.yahoo.com/");
+		String newWindowId = driver.getWindowHandle();
 		
 //		11.Launch new window and Launch the application in new window (https://parabank.parasoft.com/parabank/index.htm)
 		driver.switchTo().newWindow(WindowType.WINDOW);

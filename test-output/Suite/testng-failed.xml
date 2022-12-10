@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="framework.TestListner"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="framework.TestNgTestMethodsClass">
+      <class name="framework.TestNgTestClass">
         <methods>
-          <include name="testCase2"/>
-          <include name="setupReport"/>
+          <include name="stopReporting"/>
+          <include name="launchBrowserAndApplication"/>
+          <include name="closeBrowser"/>
+          <include name="startReporting"/>
+          <include name="testcase4"/>
         </methods>
-      </class> <!-- framework.TestNgTestMethodsClass -->
+      </class> <!-- framework.TestNgTestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
